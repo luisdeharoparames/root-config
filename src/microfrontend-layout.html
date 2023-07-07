@@ -1,0 +1,58 @@
+"@svelte-react-vue-angular-spa/homepage-cw": "//localhost:5009/js/app.js",<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+  <nav>
+    <application name="@svelte-react-vue-angular-spa/navbar-cw"></application>
+  </nav>
+  <main>
+    <route default>
+      <application
+        name="@svelte-react-vue-angular-spa/homepage-cw"
+      ></application>
+    </route>
+    <route path="loginNtt">
+      <application name="@svelte-react-vue-angular-spa/log-cw"></application>
+    </route>
+    <route path="react">
+      <application name="@svelte-react-vue-angular-spa/react-cw"></application>
+    </route>
+    <route path="vue">
+      <application name="@svelte-react-vue-angular-spa/vue-cw"></application>
+    </route>
+    <route path="angular">
+      <application
+        name="@svelte-react-vue-angular-spa/angular-cw"
+      ></application>
+    </route>
+    <route path="documents">
+      <application
+        name="@svelte-react-vue-angular-spa/documents-cw"
+      ></application>
+    </route>
+    <route path="frameworks">
+      <application
+        name="@svelte-react-vue-angular-spa/frameworks-cw"
+      ></application>
+    </route>
+    <route path="generators">
+      <application
+        name="@svelte-react-vue-angular-spa/generators-cw"
+      ></application>
+    </route>
+  </main>
+</single-spa-router>
